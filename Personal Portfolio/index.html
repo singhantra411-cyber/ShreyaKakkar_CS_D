@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreya Kakkar | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
+
+  <header class="navbar">
+    <a href="#home" class="brand">&lt;Shreya<span>.Kakkar</span>/&gt;</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about" class="nav-item">About</a>
+      <a href="#education" class="nav-item">Education</a>
+      <a href="#skills" class="nav-item">Skills</a>
+      <a href="#projects" class="nav-item">Projects</a>
+      <a href="#contact" class="nav-item">Contact</a>
+      <button type="button" id="themeToggle" class="theme-btn" aria-label="Toggle color theme">
+        Dark Mode
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section hero">
+      <div class="pill">
+        <span class="dot"></span> B.Tech Computer Science Undergraduate
+      </div>
+      <h1>Hi, I'm <span class="gradient-text">Shreya Kakkar</span></h1>
+      <p class="hero-subtitle">
+        Aspiring software and web developer passionate about crafting clean, responsive interfaces
+        and building thoughtful digital experiences from the ground up.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">Explore My Work</a>
+        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-head">
+        <span class="eyebrow">Introduction</span>
+        <h2>About Me</h2>
+      </div>
+      <div class="card about-card">
+        <p>
+          I am <strong>Shreya Kakkar</strong> (Roll No: <strong>2601151610010210</strong>), a dedicated
+          B.Tech Computer Science student with a strong curiosity for front-end engineering and logical
+          problem solving. As an aspiring developer, I enjoy transforming concepts into clean,
+          accessible, and interactive web applications while continuously expanding my technical foundation.
+        </p>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="section-head">
+        <span class="eyebrow">Academic Background</span>
+        <h2>Education</h2>
+      </div>
+      <div class="card timeline-card">
+        <div class="card-header">
+          <div>
+            <h3>Bachelor of Technology (B.Tech) in Computer Science</h3>
+            <p class="sub-info">Roll Number: 2601151610010210</p>
+          </div>
+          <span class="badge-pill">2026 – Present</span>
+        </div>
+        <p>
+          Focusing on core computer science fundamentals, structured programming, and modern web
+          development using HTML, CSS, and JavaScript.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-head">
+        <span class="eyebrow">Capabilities</span>
+        <h2>Skills &amp; Strengths</h2>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Technical Foundations</h3>
+          <p class="card-desc">Core web technologies and development tools I work with:</p>
+          <div class="chip-group">
+            <span class="chip">HTML5</span>
+            <span class="chip">CSS3</span>
+            <span class="chip">JavaScript (ES6)</span>
+            <span class="chip">Responsive Design</span>
+            <span class="chip">Git &amp; GitHub</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Personal &amp; Soft Strengths</h3>
+          <p class="card-desc">Qualities I bring to every project and team:</p>
+          <div class="chip-group">
+            <span class="chip">Quick Learner</span>
+            <span class="chip">Analytical Mindset</span>
+            <span class="chip">Creative Problem Solving</span>
+            <span class="chip">Team Collaboration</span>
+            <span class="chip">Attention to Detail</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-head">
+        <span class="eyebrow">Portfolio</span>
+        <h2>Featured Projects</h2>
+      </div>
+      <div class="grid-2">
+        <article class="card project-card">
+          <div>
+            <span class="project-tag">Web Design &amp; UI</span>
+            <h3>Personal Portfolio Website</h3>
+            <p>
+              A fully responsive personal portfolio featuring smooth scrolling, active section
+              highlighting, dark/light theme switching, and JavaScript-validated contact forms.
+            </p>
+          </div>
+          <div class="tech-row">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div>
+            <span class="project-tag">Productivity App</span>
+            <h3>To-Do List &amp; Task Manager</h3>
+            <p>
+              An interactive task management web application with add, edit, delete, completion
+              tracking, category filters, and automatic persistence via localStorage.
+            </p>
+          </div>
+          <div class="tech-row">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>localStorage</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-head">
+        <span class="eyebrow">Connect</span>
+        <h2>Contact Me</h2>
+      </div>
+      <div class="card contact-wrapper">
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="nameInput">Full Name</label>
+              <input type="text" id="nameInput" placeholder="e.g. Shreya Kakkar" />
+            </div>
+            <div class="field">
+              <label for="emailInput">Email Address</label>
+              <input type="email" id="emailInput" placeholder="you@example.com" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="messageInput">Message</label>
+            <textarea id="messageInput" rows="4" placeholder="Write your message here..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p id="formFeedback" class="feedback" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Shreya Kakkar &bull; B.Tech CS (2601151610010210)</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

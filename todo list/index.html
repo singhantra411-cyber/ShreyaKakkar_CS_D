@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow | To-Do List &amp; Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="orb orb-1" aria-hidden="true"></div>
+  <div class="orb orb-2" aria-hidden="true"></div>
+
+  <main class="app-card">
+    <header class="header">
+      <div>
+        <h1>TaskFlow</h1>
+        <p>Organize your day &amp; stay on track</p>
+      </div>
+      <span id="taskCounter" class="counter-badge">0 left</span>
+    </header>
+
+    <form id="taskForm" class="task-form">
+      <input
+        type="text"
+        id="taskInput"
+        placeholder="What do you need to get done?"
+        autocomplete="off"
+        required
+      />
+      <button type="submit" class="btn btn-add">+ Add Task</button>
+    </form>
+
+    <div class="toolbar">
+      <div class="filters" role="tablist" aria-label="Task filters">
+        <button type="button" class="btn filter-btn active" data-filter="all">All</button>
+        <button type="button" class="btn filter-btn" data-filter="active">Active</button>
+        <button type="button" class="btn filter-btn" data-filter="completed">Completed</button>
+      </div>
+      <button type="button" id="clearCompletedBtn" class="btn clear-btn">Clear Completed</button>
+    </div>
+
+    <ul id="taskList" class="task-list"></ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
